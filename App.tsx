@@ -18,7 +18,7 @@ const ScrollToTop = () => {
 const App: React.FC = () => {
   return (
     <HashRouter>
-      <div className="flex flex-col min-h-screen bg-aura-900 text-slate-50 selection:bg-aura-accent selection:text-white">
+      <div className="flex flex-col min-h-screen bg-aura-900 text-aura-cream selection:bg-aura-accent selection:text-white">
         <ScrollToTop />
         <Navbar />
         <main className="flex-grow pt-20">

@@ -11,14 +11,15 @@
           extend: {
             colors: {
               aura: {
-                900: '#0f172a', // Slate 900
-                800: '#1e293b', // Slate 800
-                accent: '#8b5cf6', // Violet 500
-                highlight: '#38bdf8', // Sky 400
+                900: '#0d5c6d', // Dark Teal (Main BG)
+                800: '#73241d', // Deep Red (Secondary BG/Cards)
+                accent: '#d76616', // Orange (Buttons/Action)
+                highlight: '#54c3bd', // Bright Teal (Highlights)
+                cream: '#f3f1d1', // Cream (Text)
               }
             },
             fontFamily: {
-              sans: ['Inter', 'sans-serif'],
+              sans: ['Galdern', 'Outfit', 'sans-serif'],
             },
             animation: {
               'fade-in': 'fadeIn 1s ease-out forwards',
@@ -38,26 +39,28 @@
         },
       }
     </script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;800&display=swap" rel="stylesheet">
     <style>
       body {
-        font-family: 'Inter', sans-serif;
-        background-color: #0f172a;
-        color: #f8fafc;
+        font-family: 'Galdern', 'Outfit', sans-serif;
+        background-color: #0d5c6d;
+        color: #f3f1d1;
       }
       /* Custom Scrollbar */
       ::-webkit-scrollbar {
         width: 8px;
       }
       ::-webkit-scrollbar-track {
-        background: #0f172a;
+        background: #0d5c6d;
       }
       ::-webkit-scrollbar-thumb {
-        background: #334155;
+        background: #73241d;
         border-radius: 4px;
       }
       ::-webkit-scrollbar-thumb:hover {
-        background: #475569;
+        background: #d76616;
       }
     </style>
   <script type="importmap">
@@ -76,5 +79,6 @@
 </head>
   <body>
     <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
   </body>
 </html>

@@ -15,9 +15,9 @@ const Services: React.FC = () => {
       <div className="max-w-7xl mx-auto">
         
         <div className="text-center mb-16">
-          <h2 className="text-base font-bold text-aura-highlight uppercase tracking-wider mb-2">What We Do</h2>
-          <h1 className="text-4xl md:text-5xl font-extrabold text-white mb-6">Expert Production Services</h1>
-          <p className="max-w-2xl mx-auto text-xl text-slate-400">
+          <h2 className="text-base font-extrabold text-aura-highlight uppercase tracking-wider mb-2">What We Do</h2>
+          <h1 className="text-4xl md:text-5xl font-extrabold text-aura-cream mb-6">Expert Production Services</h1>
+          <p className="max-w-2xl mx-auto text-xl text-aura-cream/70 font-medium">
             From studio to stage, we provide comprehensive technical solutions tailored to your unique requirements.
           </p>
         </div>
@@ -29,20 +29,20 @@ const Services: React.FC = () => {
             return (
               <div 
                 key={service.id}
-                className="bg-aura-800/50 backdrop-blur-sm border border-white/5 rounded-2xl p-8 hover:bg-aura-800 transition-all duration-300 hover:border-aura-accent/30 group"
+                className="bg-aura-800/80 backdrop-blur-sm border border-aura-cream/5 rounded-2xl p-8 hover:bg-aura-800 transition-all duration-300 hover:border-aura-accent/30 group shadow-lg"
               >
-                <div className="w-14 h-14 bg-black rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                <div className="w-14 h-14 bg-aura-900 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 border border-aura-cream/10">
                   <Icon className="w-7 h-7 text-aura-accent" />
                 </div>
                 
-                <h3 className="text-2xl font-bold text-white mb-4">{service.title}</h3>
-                <p className="text-slate-400 mb-8 leading-relaxed">
+                <h3 className="text-2xl font-extrabold text-aura-cream mb-4">{service.title}</h3>
+                <p className="text-aura-cream/70 mb-8 leading-relaxed font-medium">
                   {service.description}
                 </p>
 
                 <ul className="space-y-3">
                   {service.details.map((detail, idx) => (
-                    <li key={idx} className="flex items-start text-sm text-slate-300">
+                    <li key={idx} className="flex items-start text-sm text-aura-cream/60">
                       <CheckCircle className="w-5 h-5 text-aura-highlight mr-3 flex-shrink-0" />
                       <span>{detail}</span>
                     </li>
@@ -53,15 +53,15 @@ const Services: React.FC = () => {
           })}
         </div>
 
-        <div className="mt-24 bg-gradient-to-r from-aura-accent to-indigo-600 rounded-3xl p-10 md:p-16 text-center relative overflow-hidden">
+        <div className="mt-24 bg-gradient-to-r from-aura-accent to-aura-800 rounded-3xl p-10 md:p-16 text-center relative overflow-hidden shadow-2xl">
           <div className="relative z-10">
-            <h3 className="text-3xl font-bold text-white mb-4">Ready to elevate your sound?</h3>
-            <p className="text-indigo-100 mb-8 max-w-xl mx-auto">
+            <h3 className="text-3xl font-extrabold text-white mb-4">Ready to elevate your sound?</h3>
+            <p className="text-aura-cream/90 mb-8 max-w-xl mx-auto font-medium">
               Contact us today to discuss your upcoming project or event requirements.
             </p>
             <a 
               href="mailto:contact@aurasonic.com" 
-              className="inline-block bg-white text-indigo-600 font-bold px-8 py-3 rounded-full hover:bg-indigo-50 transition-colors"
+              className="inline-block bg-aura-cream text-aura-800 font-extrabold px-8 py-3 rounded-full hover:bg-white transition-colors"
             >
               Get a Quote
             </a>
